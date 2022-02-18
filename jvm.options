@@ -40,7 +40,7 @@
 -Djava.awt.headless=true
 
 # ensure UTF-8 encoding by default (e.g. filenames)
--Dfile.encoding=UTF-8
+-Dfile.encoding=GBK
 
 # use our provided JNA always versus the system one
 #-Djna.nosys=true
