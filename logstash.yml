@@ -38,11 +38,11 @@
 #
 # This defaults to the number of the host's CPU cores.
 #
-# pipeline.workers: 2
+ pipeline.workers: 4
 #
 # How many events to retrieve from inputs before sending to filters+workers
 #
-# pipeline.batch.size: 125
+ pipeline.batch.size: 500
 #
 # How long to wait in milliseconds while polling for the next event
 # before dispatching an undersized batch to filters+outputs
@@ -232,7 +232,7 @@
 # ------------ Dead-Letter Queue Settings --------------
 # Flag to turn on dead-letter queue.
 #
-# dead_letter_queue.enable: false
+ dead_letter_queue.enable: true
 
 # If using dead_letter_queue.enable: true, the maximum size of each dead letter queue. Entries
 # will be dropped if they would increase the size of the dead letter queue beyond this setting.
